@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Phụ Kiện Tết</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./product2.css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500'
+      rel='stylesheet' type='text/css'>
+    <link rel='stylesheet prefetch'
+      href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="icon"
+      href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico"
+      type="image/x-ico" />
+  </head>
+  <body>
+
+    <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img class="abc" data-image="black" src="./images/op den.jpg" alt>
+        <img data-image="red" class="active" src="./images/op do.jpg" alt>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Vali, Túi Xách, Balo</span>
+          <h1>Ốp lưng Tết LN01</h1>
+          <p>Ốp lưng Tết LN01 có thiết kế đẹp mắt với chủ đề ngày tết cùng với sự bền bỉ và cầm nắm thoải mái.
+          </p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color"
+                  value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color"
+                  value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color"
+                  value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>Cable configuration</span>
+
+            <div class="cable-choose">
+              <button>Straight</button>
+              <button>Coiled</button>
+              <button>Long-coiled</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+           <h6 class="prc"><del>109.000 VND</del></h6>
+          <span>169.000 VND</span>
+          <a href="#" class="cart-btn">Add to cart</a>
+        </div>
+      </div>
+    </main> 
+
+    <script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      charset="utf-8"></script>
+
+    <script type="text/javascript">
+   $(document).ready(function() {
+
+  $('.color-choose input').on('click', function() {
+      var headphonesColor = $(this).attr('data-image');
+
+      $('.active').removeClass('active');
+      $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+      $(this).addClass('active');
+  });
+
+});
+</script>
+
+  </body>
+</html>

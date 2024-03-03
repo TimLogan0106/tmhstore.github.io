@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNIN PAGE</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="icon" href="./img/logo.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ctn">
+        <button type="button" ><a href="./home.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+        </a></button>
+    <div class="container">
+        <form  action="#" method="POST" name="register" onsubmit="return check()" enctype="multipart/form-data">
+            <h1 class="name_page_title">SIGN UP</h1> 
+          <a href="../home.html"><h3>tmhstore.</h3></a>
+            <table id="#information">
+                <tr>
+                    <td class="detail-login">Tên đăng nhập</td>
+                    <td class="detail-login"><input type="text" name="username" id="idUsername"></td>
+                    <td class="detail-login"><p id='errorUsername' style='color: red;'></p></td>
+                </tr>
+                <tr>
+                    <td class="detail-login">Mật khẩu</td>
+                    <td class="detail-login"><input type="password" name="password1" id="passwd1"></td>
+                    <td class="detail-login"><p id='errorPasswd' style='color: red;'></p></td>
+                </tr>
+                <tr>
+                    <td class="detail-login">Gõ lại mật khẩu</td>
+                    <td class="detail-login"><input type="password" name="password2" id="passwd2"></td>
+                    <td class="detail-login"><p id='errorRePasswd' style='color: red;'></p></td>
+                    <td class="detail-login"><p id='errorRePasswd1' style='color: red;'></p></td>
+                </tr>
+                </tr>
+            
+                <tr>
+                    <td></td>
+                    <td>
+                        <input class="btn" type="submit"  name="submit" value="Đăng ký">
+                        <input class="btn" type="reset"  name="reset" value="Làm lại">
+                    </td>
+                </tr>
+        </table>
+        <p>Bạn đã có tài khoản <a href="./login.html">Login</a></p> 
+    </form>
+    </div>
+    <img src="" alt="">
+    <div class="login-footer">
+        .
+    </div>
+</div>
+</body>
+<script src="./signin.js"></script>
+</html>
